@@ -3,8 +3,6 @@ import java.util.*;
 import java.time.Duration;
 import java.time.Instant;
 import java.sql.*;
-	
-
 public class GuessTheNumberGame {
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/guess_the_number_game";
 			    private static final String DB_USER = "root"; 
@@ -70,8 +68,7 @@ public class GuessTheNumberGame {
 			                System.out.println("Invalid input! Enter a 4-digit number with unique digits.");
 			                continue;
 			            }
-
-			            attempts++;
+				    attempts++;
 			            int plus = 0, minus = 0;
 			            for (int i = 0; i < 4; i++) {
 			                if (userGuess.charAt(i) == secretNumber.charAt(i)) {
