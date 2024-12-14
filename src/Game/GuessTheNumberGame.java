@@ -6,13 +6,9 @@ import java.sql.*;
 	
 
 public class GuessTheNumberGame {
-	
-	
-
-			    private static final String DB_URL = "jdbc:mysql://localhost:3306/guess_the_number_game";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/guess_the_number_game";
 			    private static final String DB_USER = "root"; 
 			    private static final String DB_PASSWORD = "1234";  
-			    
 			    private static String generateUniqueNumber() {
 			        List<Integer> digits = new ArrayList<>();
 			        for (int i = 0; i <= 9; i++) {
@@ -96,8 +92,7 @@ public class GuessTheNumberGame {
 			                break;
 			            }
 			        }
-
-			        scanner.close();
+                              scanner.close();
 			    }
 			}
 
